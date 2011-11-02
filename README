@@ -1,4 +1,7 @@
-FIXME
+global-lock provides a single global lock for Haskell code, implemented without
+unsafePerformIO.  You can use this, for example, to protect a thread-unsafe C
+library.  global-lock is usable as-is, or as a template for including a similar
+lock in your own Haskell project.
 
 Documentation is hosted at http://hackage.haskell.org/package/global-lock
 
