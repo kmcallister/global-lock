@@ -37,6 +37,6 @@ set = do
 get :: IO (MVar ())
 get = do
     p <- c_get_global
-    if p /= nullPtr
-        then deRefStablePtr (castPtrToStablePtr p)
-        else set >> get
+    if p == nullPtr
+        then set >> get
+        else deRefStablePtr (castPtrToStablePtr p)
