@@ -7,6 +7,7 @@
 
 static void* global = 0;
 
+// Imported 'unsafe' in Haskell code.  Must not block!
 void* c_get_global_ptr(void) {
     return global;
 }
