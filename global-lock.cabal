@@ -13,6 +13,8 @@ description:
 
 extra-source-files:
     README
+  , test/counter.hs
+  , test/bench.hs
 
 library
   exposed-modules:
