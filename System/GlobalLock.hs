@@ -5,7 +5,7 @@ module System.GlobalLock
 
 import Control.Concurrent.MVar
 
-import System.GlobalLock.Internal
+import System.GlobalLock.Internal ( get )
 
 -- | Take the global lock for the duration of an @'IO'@ action.
 --
