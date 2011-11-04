@@ -15,8 +15,8 @@ import Control.Concurrent.MVar
 
 
 {- Importing c_get_global with 'unsafe' decreases locking latency by
-   about 50%.  It's okay because that function just reads a C static
-   global.
+   about 50%.  The C function just reads a static variable, so it's
+   okay to use 'unsafe'.
 
    c_set_global must not be imported 'unsafe' because it uses GCC
    atomic-operation builtins which, in the worst case, might call a
