@@ -3,7 +3,7 @@ import System.GlobalLock
 import Data.IORef
 import Control.Monad
 import Control.Concurrent
-import Control.Concurrent.Spawn
+import Control.Concurrent.Spawn  -- package 'spawn'
 import System.Exit
 import System.Random
 
